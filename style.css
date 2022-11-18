@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.6), -15px -15px 20px #fffb;
+    border: 1px solid black;
+    background-color: #0808051c;
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+   
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #000000;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.6), inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 900;
+    border: 1px solid black;
+}
+
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.em;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px #fff;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.199);
+}
+
+.calculator .buttons span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px #fff;
+    color: red;
+
+}
+
+.calculator .buttons span#clear {
+    grid-column: span 2;
+    background-color: red;
+    color: rgb(245, 245, 245);
+}
+.calculator .buttons span#div {
+    grid-row: span 1;
+    background-color: rgb(0, 217, 255);
+    color: rgb(245, 245, 245);
+    border: 1px solid rgb(202, 202, 202);
+}
+.calculator .buttons span#plus {
+    grid-row: span 2;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+.calculator .buttons span#equal {
+    grid-row: span 2;
+    background-color: rgb(5, 121, 255);
+    color: white;
+    border: 2px solid white;
+}
+.calculator .buttons span#sub {
+    grid-column: span 1;
+    background-color: rgb(207, 203, 214);
+    color: rgb(32, 30, 39);
+    border: 2px solid white;
+}
+
+.calculator .buttons span#mul {
+    grid-column: span 1;
+    background-color: rgb(250, 183, 0);
+    color: rgb(32, 30, 39);
+    border: 2px solid white;
+}
+
+.calculator .buttons span#sub {
+    grid-column: span 1;
+    background-color: rgb(250, 0, 137);
+    color: rgb(32, 30, 39);
+    border: 2px solid white;
+}
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active,
+.calculator .buttons span#div:active,
+.calculator .buttons span#mul:active,
+.calculator .buttons span#min:active
+
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    color: green;
+}
